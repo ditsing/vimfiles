@@ -21,6 +21,7 @@ set smarttab
 set showmatch
 set showfulltag
 set wildmode=longest,full
+set colorcolumn=80
 
 if has("gui_running")
 	set guifont=Ubuntu\ Mono\ derivative\ Powerline:h13
