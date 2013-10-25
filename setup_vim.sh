@@ -1,10 +1,11 @@
 #!/bin/bash
-echo "Downloading vimrc from Github"
-git clone https://github.com/ditsing/vimrc.git
-
-cd vimrc
-ln vimrc ~/.vimrc
 mkdir -p ~/.vim
+
+echo "Downloading vimrc from Github"
+git clone https://github.com/ditsing/vimrc.git ~/.vim/vimrc
+
+cd ~/.vim/vimrc
+ln vimrc ~/.vimrc
 mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/swap
 mkdir -p ~/.vim/bundle
