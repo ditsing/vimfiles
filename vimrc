@@ -117,7 +117,9 @@ Bundle 'SirVer/ultisnips'
 Bundle 'majutsushi/tagbar'
 
 " Remove unwanted spaces
-autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+augroup ditsig
+	autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+augroup END
 
 "Taglist.vim
 let Tlist_Auto_Highlighting_Tag = 1
