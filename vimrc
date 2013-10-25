@@ -21,7 +21,7 @@ set smarttab
 set showmatch
 set showfulltag
 set wildmode=longest,full
-set colorcolumn=80
+set colorcolumn=+1,+2
 
 if has("gui_running")
 	set guifont=Ubuntu\ Mono\ derivative\ Powerline:h13
@@ -115,6 +115,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 
+Bundle 'majutsushi/tagbar'
 
 " Remove unwanted spaces
 autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :%s/\s\+$//e
@@ -175,3 +176,8 @@ let g:airline#extensions#branch#enabled = 1
 
 " Only in Vim 7.3.74+
 set clipboard=unnamedplus       " Yank to the X window clipboard
+
+" YouCompleteMe Plugin
+let g:ycm_global_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_completion = 1

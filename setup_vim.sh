@@ -19,7 +19,7 @@ mkdir ~/.fonts
 cp ~/.vim/bundle/powerline-fonts/UbuntuMono/*.ttf ~/.fonts
 
 echo "Copy YCM general configuration files."
-ln general_ycm_extra_conf.py ~/.vim/
+ln general_ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 echo "You need to compile YouCompleteMe. Install cmake first, then run"
 echo '	cd ~/.vim/bundle/YouCompleteMe'
 echo '	./install.sh --clang-completer'
