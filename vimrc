@@ -115,10 +115,20 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
 
 Bundle 'majutsushi/tagbar'
+Bundle 'bufexplorer.zip'
+Bundle 'wincent/Command-T'
 
 " Remove unwanted spaces
-augroup ditsig
-	autocmd FileType c,cpp,java,php,ruby,python autocmd BufWritePre <buffer> :%s/\s\+$//e
+augroup ditsing
+	highlight ExtraWhitespace ctermbg=red guibg=red
+	match ExtraWhitespace /\s\+$/
+	autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+	autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+	autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+	autocmd BufWinLeave * call clearmatches()
+
+	" Use F4 to delete all trailing whitespaces
+	nnoremap <silent> <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 augroup END
 
 "Taglist.vim
@@ -159,7 +169,9 @@ noremap <F2> :bprev<CR>
 noremap <F3> :bnext<CR> 
 
 " Flex
-autocmd BufRead,BufNewFile *.flex setlocal ft=lex
+augroup ditsing
+	autocmd BufRead,BufNewFile *.flex setlocal ft=lex
+augroup END
 
 " Vim airline
 let g:airline_powerline_fonts=1
@@ -182,3 +194,9 @@ set clipboard=unnamedplus       " Yank to the X window clipboard
 let g:ycm_global_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Save undo to file
+set undodir=~/.vim/.undo
+set undofile
+set undolevels=1000
+set undoreload=10000
