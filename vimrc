@@ -123,6 +123,8 @@ Bundle 'wincent/Command-T'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 
+Bundle 'ditsing/vimfiles'
+
 " Scheme
 set background=dark
 colorscheme solarized

@@ -9,8 +9,8 @@ mkdir -p ~/.vim/bundle
 cd ~/.vim/bundle
 
 echo "Downloading vimfiles of ditsing from Github"
-git clone https://github.com/ditsing/vimfiles.git vimfiles
-ln ditsing/vimrc ~/.vimrc
+git clone https://github.com/ditsing/vimfiles.git
+ln vimfiles/vimrc ~/.vimrc
 
 echo "Installing plugins"
 git clone https://github.com/gmarik/vundle.git
