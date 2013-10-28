@@ -118,6 +118,10 @@ Bundle 'majutsushi/tagbar'
 Bundle 'bufexplorer.zip'
 Bundle 'wincent/Command-T'
 
+" Scheme
+set background=dark
+colorscheme solarized
+
 " Remove unwanted spaces
 augroup ditsing
 	highlight ExtraWhitespace ctermbg=red guibg=red
@@ -145,10 +149,6 @@ let Tlist_WinWidth = 40
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Close_On_Select = 1
 nnoremap <silent> <F5> : TlistToggle<CR>
-
-"Scheme
-set background=dark
-colorscheme solarized
 
 " --------------------
 " MiniBufExpl
