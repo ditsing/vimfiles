@@ -11,7 +11,7 @@ set magic
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
 set statusline=%F%(\ %m%r%h%w%)\ [%{&ff}]\ [%Y]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}%=[0x%B]\ [%l,%(%c%V%)]\ [%P]
-	
+
 set laststatus=2
 set cindent
 set noexpandtab
@@ -21,6 +21,9 @@ set showmatch
 set showfulltag
 set wildmode=longest,full
 set colorcolumn=+1,+2
+set hidden
+
+set smartcase
 
 if has("gui_running")
 	set guifont=Ubuntu\ Mono\ derivative\ Powerline:h13
@@ -166,7 +169,7 @@ highlight MBEVisibleChanged guifg=White
 
 " move between buffers.
 noremap <F2> :bprev<CR>
-noremap <F3> :bnext<CR> 
+noremap <F3> :bnext<CR>
 
 " Flex
 augroup ditsing
