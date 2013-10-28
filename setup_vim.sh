@@ -10,7 +10,8 @@ cd ~/.vim/bundle
 
 echo "Downloading vimfiles of ditsing from Github"
 git clone https://github.com/ditsing/vimfiles.git
-ln vimfiles/vimrc ~/.vimrc
+ln -s vimfiles/vimrc ~/.vimrc
+ln -s vimfiles/bundles.vim ~/.vim/bundles.vim
 
 echo "Installing plugins"
 git clone https://github.com/gmarik/vundle.git
