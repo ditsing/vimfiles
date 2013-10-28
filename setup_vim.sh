@@ -1,24 +1,25 @@
 #!/bin/bash
 mkdir -p ~/.vim
 
-echo "Downloading vimfiles of ditsing from Github"
-git clone https://github.com/ditsing/vimfiles.git ~/.vim/vimfiles
-
-cd ~/.vim/vimfiles
-ln vimrc ~/.vimrc
 mkdir -p ~/.vim/.backup
 mkdir -p ~/.vim/.swap
 mkdir -p ~/.vim/.undo
 mkdir -p ~/.vim/bundle
 
+cd ~/.vim/bundle
+
+echo "Downloading vimfiles of ditsing from Github"
+git clone https://github.com/ditsing/vimfiles.git vimfiles
+ln ditsing/vimrc ~/.vimrc
+
 echo "Installing plugins"
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone https://github.com/gmarik/vundle.git
 vim +BundleInstall +qall
 
 echo "Installing Airline fonts"
-git clone https://github.com/Lokaltog/powerline-fonts.git ~/.vim/bundle/powerline-fonts
+git clone https://github.com/Lokaltog/powerline-fonts.git
 mkdir ~/.fonts
-cp ~/.vim/bundle/powerline-fonts/UbuntuMono/*.ttf ~/.fonts
+cp powerline-fonts/UbuntuMono/*.ttf ~/.fonts
 
 echo "Copy YCM general configuration files."
 ln general_ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
