@@ -1,10 +1,10 @@
 #!/bin/bash
 mkdir -p ~/.vim
 
-echo "Downloading vimrc from Github"
-git clone https://github.com/ditsing/vimrc.git ~/.vim/vimrc
+echo "Downloading vimfiles of ditsing from Github"
+git clone https://github.com/ditsing/vimfiles.git ~/.vim/vimfiles
 
-cd ~/.vim/vimrc
+cd ~/.vim/vimfiles
 ln vimrc ~/.vimrc
 mkdir -p ~/.vim/.backup
 mkdir -p ~/.vim/.swap

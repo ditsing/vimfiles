@@ -120,6 +120,8 @@ Bundle 'SirVer/ultisnips'
 Bundle 'majutsushi/tagbar'
 Bundle 'bufexplorer.zip'
 Bundle 'wincent/Command-T'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
 
 " Scheme
 set background=dark
