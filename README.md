@@ -1,4 +1,4 @@
-vimrc
+Vimfiles
 =====
 
-Vimrc and Vim setup scripts.
+Vim files and Vim setup scripts.
