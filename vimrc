@@ -8,8 +8,8 @@ set autowrite
 "set autochdir
 set wildmenu
 set magic
-set backupdir=~/.vim/backup
-set directory=~/.vim/swap
+set backupdir=~/.vim/.backup
+set directory=~/.vim/.swap
 set statusline=%F%(\ %m%r%h%w%)\ [%{&ff}]\ [%Y]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}%=[0x%B]\ [%l,%(%c%V%)]\ [%P]
 
 set laststatus=2
