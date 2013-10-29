@@ -6,13 +6,12 @@ mkdir -p ~/.vim/.swap
 mkdir -p ~/.vim/.undo
 mkdir -p ~/.vim/bundle
 
-cd ~/.vim/bundle
-
 echo "Downloading vimfiles of ditsing from Github"
-git clone https://github.com/ditsing/vimfiles.git
-ln -s vimfiles/vimrc ~/.vimrc
-ln -s vimfiles/bundles.vim ~/.vim/bundles.vim
+git clone https://github.com/ditsing/vimfiles.git ~/.vim/ditsing
+cp ~/.vim/ditsing/vimrc ~/.vimrc
+cp ~/.vim/ditsing/bundles.vim ~/.vim/
 
+cd ~/.vim/bundle
 echo "Installing plugins"
 git clone https://github.com/gmarik/vundle.git
 vim +BundleInstall +qall

@@ -5,9 +5,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-BBundle 'ditsing/vimfiles'
+Bundle 'ditsing/vimfiles'
 
-undle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 
