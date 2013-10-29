@@ -22,6 +22,7 @@ set showfulltag
 set wildmode=longest,full
 set colorcolumn=+1,+2
 set hidden
+set nostartofline
 
 set smartcase
 
