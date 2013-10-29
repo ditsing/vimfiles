@@ -14,7 +14,7 @@ cp ~/.vim/ditsing/bundles.vim ~/.vim/
 cd ~/.vim/bundle
 echo "Installing plugins"
 git clone https://github.com/gmarik/vundle.git
-vim +BundleInstall +qall
+vim -u bundles.vim +BundleInstall +qall
 
 echo "Installing Airline fonts"
 git clone https://github.com/Lokaltog/powerline-fonts.git
