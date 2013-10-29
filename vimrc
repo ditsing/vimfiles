@@ -169,7 +169,7 @@ let g:airline#extensions#branch#enabled = 1
 set clipboard=unnamedplus       " Yank to the X window clipboard
 
 " YouCompleteMe Plugin
-let g:ycm_global_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_completion = 1
 
