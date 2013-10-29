@@ -94,7 +94,7 @@ set timeoutlen=150
 
 " Vundle
 " Move all bundles to another file.
-source bundles.vim
+source ~/.vim/bundle/vimfiles/bundles.vim
 
 " Scheme
 set background=dark
