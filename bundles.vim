@@ -6,6 +6,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'ditsing/vimfiles'
+Bundle 'ditsing/vim-quickrunner'
 
 Bundle 'tpope/vim-fugitive'
 Bundle 'ervandew/supertab'
