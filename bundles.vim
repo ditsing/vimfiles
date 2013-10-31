@@ -20,7 +20,7 @@ Bundle 'ervandew/supertab'
 Bundle 'airblade/vim-gitgutter'
 "Bundle 'tpope/pathogen'
 Bundle 'tpope/vim-surround'
-Bundle 'techlivezheng/vim-plugin-minibufexpl'
+Bundle 'ditsing/vim-plugin-minibufexpl'
 Bundle 'bling/vim-airline'
 
 Bundle 'scrooloose/nerdcommenter'
