@@ -96,7 +96,6 @@ nnoremap <silent> <F5> : TlistToggle<CR>
 " MiniBufExpl
 " --------------------
 let g:miniBufExplTabWrap = 1 " make tabs show complete (no broken on two lines)
-let g:miniBufExplModSelTarget = 1 " If you use other explorers like TagList you can (As of 6.2.8) set it at 1:
 let g:miniBufExplMapWindowNavVim = 1
 
 highlight MBENormal guifg=LightBlue
