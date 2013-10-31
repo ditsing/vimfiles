@@ -96,7 +96,7 @@ nnoremap <silent> <F5> : TlistToggle<CR>
 " MiniBufExpl
 " --------------------
 let g:miniBufExplTabWrap = 1 " make tabs show complete (no broken on two lines)
-let g:miniBufExplMapWindowNavVim = 1
+let g:MiniBufExplSetUT = 0
 
 highlight MBENormal guifg=LightBlue
 highlight MBEChanged guifg=LightGreen
