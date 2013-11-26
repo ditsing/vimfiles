@@ -34,8 +34,17 @@ import ycm_core
 # These are the compilation flags that will be used in case there's no
 # compilation database set (by default, one is not set).
 # CHANGE THIS LIST OF FLAGS. YES, THIS IS THE DROID YOU HAVE BEEN LOOKING FOR.
-flags = [
-'-Wall'
+default_flags = []
+
+cflags = [
+  '-Wall',
+  '-std=c99',
+]
+
+cppflags =[
+  '-Wall',
+  '-std=c++0x',
+  '-x c++',
 ]
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
@@ -93,15 +102,12 @@ def FlagsForFile( filename ):
     final_flags = MakeRelativePathsInFlagsAbsolute(
       compilation_info.compiler_flags_,
       compilation_info.compiler_working_dir_ )
-
-    # NOTE: This is just for YouCompleteMe; it's highly likely that your project
-    # does NOT need to remove the stdlib flag. DO NOT USE THIS IN YOUR
-    # ycm_extra_conf IF YOU'RE NOT 100% YOU NEED IT.
-    try:
-      final_flags.remove( '-stdlib=libc++' )
-    except ValueError:
-      pass
   else:
+    flags = default_flags;
+    if filename.endswith(".cpp"):
+      flags = cppflags
+    elif filename.endwith(".c"):
+      flags = cflags
     relative_to = DirectoryOfThisScript()
     final_flags = MakeRelativePathsInFlagsAbsolute( flags, relative_to )
 
